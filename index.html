@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carte de visite — Alexis Raphin</title>
+<meta name="description" content="Carte de visite digitale de Alexis Raphin">
+<style>
+:root{--accent:#0d6efd;--bg:#f6f7fb;--card:#ffffff}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);padding:20px}
+.card{background:var(--card);border-radius:14px;box-shadow:0 8px 24px rgba(16,24,40,0.08);padding:22px;max-width:420px;width:100%;text-align:center}
+.avatar{width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:4px solid #fff;box-shadow:0 6px 18px rgba(13,110,253,0.08)}
+h1{font-size:1.25rem;margin:6px 0}
+p.role{margin:6px 0;color:#6b7280}
+.contacts{display:flex;flex-direction:column;gap:10px;margin-top:14px;align-items:center}
+a.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;text-decoration:none;color:#fff;background:var(--accent);box-shadow:0 6px 12px rgba(13,110,253,0.12)}
+.links{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.meta{color:#374151;font-size:0.95rem}
+.small{font-size:0.9rem;color:#6b7280}
+footer{margin-top:14px;font-size:0.8rem;color:#9ca3af}
+@media (min-width:680px){.card{padding:28px}}
+</style>
+</head>
+<body>
+<main class="card" role="main">
+<!-- IMAGE : remplace photo.jpg par le nom de ton image si besoin -->
+<img src="photo.jpg" alt="Photo de Prénom Nom" class="avatar">
+
+
+<!-- NOM ET TITRE : remplace par tes infos -->
+<h1>Alexis Raphin</h1>
+<p class="role">AVR Capital</p>
+
+
+<!-- CONTACTS RAPIDES : remplace email et téléphone -->
+<p class="meta">📧 <a href="mailto:araphin@avrcapital.ch">araphin@avrcapital.ch</a> · 📞 <a href="tel:+41782689727>+41 78 268 97 27</a></p>
+
+
+
+<!-- TELECHARGER VCARd ET AUTRES -->
+<div class="contacts">
+<!-- contact.vcf : créer un fichier contact.vcf à la racine pour que ce lien télécharge la vCard -->
+<a class="btn" href="contact.vcf" download>📇 Ajouter à mes contacts (vCard)</a>
+
+
+<footer>
+Astuce : nomme ton fichier principal <strong>index.html</strong> et place-le à la racine du dépôt (GitHub Pages affichera automatiquement ce fichier).
+</footer>
+</main>
+
+
+<!--
+Exemple de contenu pour le fichier `contact.vcf` (crée un nouveau fichier `contact.vcf` et colle ce bloc) :
+
+
+BEGIN:VCARD
+VERSION:3.0
+FN:Prénom Nom
+ORG:Entreprise
+TITLE:Titre / Poste
+TEL;TYPE=WORK,VOICE:+330000000000
+EMAIL;TYPE=INTERNET:email@example.com
+URL:https://ton-site-personnel.example
+END:VCARD
+
+
+-->
+</body>
+</html>
